@@ -1,0 +1,5 @@
+<h3>Peoples</h3>
+<div *ngIf="(people$ | async)?.length>0;">
+<ul *ngFor="let p of (people$ | async)"> {{ p.name }} {{ p.email}}</ul>
+</div>
+
